@@ -5,7 +5,8 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy_fear_farm_staging": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 2key/tokensfarm-fear-staging"
+    "deploy_fear_farm_staging": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 2key/tokensfarm-fear-staging",
+    "deploy_fear_farm_prod": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 2key/tokensfarm-fear-prod"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",

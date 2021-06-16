@@ -1,0 +1,15 @@
+{
+  "name": "ioi-farm-subgraph",
+  "author": "Idan Portal <https://github.com/4tal>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy_ioi_farm_staging": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 2key/tokensfarm-ioi-staging",
+    "deploy_ioi_farm_prod": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 2key/tokensfarm-ioi-prod"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}

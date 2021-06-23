@@ -6,9 +6,9 @@ dataSources:
     name: Farm
     network: ropsten
     source:
-      address: "0xd58Cc81fAaaC5CdB0347b0cc0F592827200788fd"
+      address: "0x88DF6aFa1d3916a71BCE58Aa06E72D33EB23FB88"
       abi: Farm
-      startBlock: 10493196
+      startBlock: 10493586
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4

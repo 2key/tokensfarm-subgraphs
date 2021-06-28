@@ -1,0 +1,14 @@
+{
+  "name": "hord-farm-subgraph",
+  "author": "Miljan Rakita <https://github.com/Miljan9602>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy_hord_farm_prod": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ 2key/tokensfarm-ioi-prod"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.20.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}

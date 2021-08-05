@@ -1,0 +1,29 @@
+specVersion: 0.0.2
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Farm
+    network: mainnet
+    source:
+      address: "0xf6736cB10534460A339a115196AF3C4F99BAd4ED"
+      abi: Farm
+      startBlock: 12919566
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - Metadata
+        - User
+        - DepositEntity
+        - WithdrawEntity
+      abis:
+        - name: Farm
+          file: Farm/abis/Farm.json
+      eventHandlers:
+        - event: Deposit(indexed address,indexed uint256,uint256)
+          handler: handleDeposit
+        - event: Withdraw(indexed address,indexed uint256,uint256)
+          handler: handleWithdraw
+      file: Farm/Farm.wasm
